@@ -1,0 +1,249 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jQuery Mobile Web App</title>
+<link href="jquery/jquery.mobile-1.1.1.min.css" rel="stylesheet" type="text/css"/>
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<script src="jquery/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery/jquery.mobile-1.1.1.min.js" type="text/javascript"></script>
+</head> 
+<body> 
+<!---------- logine --------------->
+<div data-role="page" id="Signin" class="bck_img">
+	 <div data-role="header" class="header_border" id="header_color">
+      <div class="banner_con">Remote Banking System</div>
+      <div class="banner_con1">Transactions made simple</div>
+	  </div>
+	  <div data-role="content">
+        <form>
+       <p class="tit_font">Agent Login</p>
+       <div class="form_div">
+       <div class="form_div1"><img src="img/home/au.png" width="30" height="30"></div>
+       <div class="form_div2"><input type="text" name="email" id="email" placeholder="Username"></div>
+       </div>
+       
+       <div class="form_div">
+       <div class="form_div1"><img src="img/home/ap.png" width="30" height="30"></div>
+       <div class="form_div2"><input type="password" name="password" id="password" class="infld" placeholder="Password"></div>
+       </div><br/><br/><br/><br/><br/><br/>
+       <button type="button" class="login_btn" id="login" style="background-color:#ffd1bf; border-radius:0px;"><a href="#Dashboard">SIGN IN</a></button>
+       </form>
+        </div>
+</div>
+  <!---------- Dashboard --------------->
+        
+<div data-role="page" id="Dashboard" class="bck_img">
+            <div data-role="content">
+<div class="inner_header">
+  <div class="inner_con">
+                <font class="inner_large">Remote Banking System</font><br/>
+                <font class="inner_small">Transations made simple</font>
+  </div>
+                    <div class="inner_log">
+                    <a href="#Signin"><img src="img/home/logout.png" width="40" height="40"></a>
+                    </div>
+</div>
+                <p class="tit_font1">Welcome User!</p>
+                    <div class="dash"><a href="#Balance">
+                         <div class="dash_tile1">
+                              <div class="dash_img"><img src="img/home/bal-icon.png" width="40" height="36"></div>
+                              <div class="dash_con">
+                                  <div class="dash_big">balance</div>
+                                  <div class="dash_small">Check your available balance</div>
+                              </div>
+                         </div></a>
+                    <div>
+                    
+                    <div class="dash"><a href="#Transaction">
+                         <div class="dash_tile2">
+                              <div class="dash_img"><img src="img/home/trans-icon.png" width="40" height="36"></div>
+                              <div class="dash_con">
+                                  <div class="dash_big">transaction</div>
+                                  <div class="dash_small">Tap for customer's account and transaction</div>
+                              </div>
+                         </div></a>
+                     <div>
+                     
+                      <div class="dash"><a href="#Agent">
+                         <div class="dash_tile2">
+                              <div class="dash_img"><img src="img/home/trans-icon.png" width="40" height="36"></div>
+                              <div class="dash_con">
+                                  <div class="dash_big">agent info</div>
+                                  <div class="dash_small">Tap to see your account balance and transaction info</div>
+                              </div>
+                         </div></a>
+                     <div>
+                    
+                    <div class="dash"><a href="#FAQ">
+                      <div class="dash_tile3">
+                              <div class="dash_img"><img src="img/home/help.png" width="40" height="36"></div>
+                              <div class="dash_con">
+                                  <div class="dash_big">help</div>
+                                  <div class="dash_small">We are ready to help you. Checkout FAQ's</div>
+                              </div></a>
+                         </div>
+                       <a href="#Signin"> <div class="dash_tile4">
+                              <div class="dash_img"><img src="img/home/logout.png" width="40" height="36"></div>
+                              <div class="dash_con">
+                                  <div class="dash_big">logout</div>
+                                  <div class="dash_small">Signout from your profile</div>
+                              </div>
+                         </div></a>
+                     <div>               
+ </div>
+ 
+ </div></div></div></div></div></div></div></div> </div>
+ 
+ <!---------- agent info --------------->         
+    <div data-role="page" id="Balance" class="bck_img">
+                        <div data-role="content">
+            <div class="inner_header">
+                      <div class="inner_con">
+                                    <font class="inner_large">Remote Banking System</font><br/>
+                                    <font class="inner_small">Transations made simple</font>
+                      </div>
+                                <div class="inner_log">
+                                <a href="#Signin"><img src="img/home/logout.png" width="40" height="40"></a>
+                                </div>
+            </div>
+            
+            <p class="tit_font">Your Balance</p>
+            <div class="balance_dis">
+             <p><img src="img/home/doller.png" width="50" height="74"></p>
+             
+            <font class="balance_amount">10,670</font><br/>
+            <font class="balance_date">Oct 1,2015</font><br/>
+            <font class="balance_date">11.15PM</font>
+            </div>
+            
+    </div>
+</div>
+ </div>
+</div> </div>
+
+
+ <!---------- Withdraw & Deposit --------------->   
+<div data-role="page" id="Transaction" class="bck_img">
+            <div data-role="content">
+                        <div class="inner_header">
+                              <div class="inner_con">
+                                            <font class="inner_large">Remote Banking System</font><br/>
+                                            <font class="inner_small">Transations made simple</font>
+                              </div>
+                                            <div class="inner_log">
+                                            <a href="#Signin"><img src="img/home/logout.png" width="40" height="40"></a>
+                                            </div>
+                        </div>
+                        <div class="dash">
+                        <br/>
+                        <a href="#withamount" data-rel="popup" data-position-to="window" data-transition="slidedown" data-rel="back">
+                         <div class="dash_tile2">
+                              <div class="dash_img"><img src="img/home/withdraw.png" width="40" height="36"></div>
+                              <div class="dash_con">
+                                  <div class="dash_big">Withdraw</div>
+                                  <div class="dash_small">Withdraw money from user account</div>
+                              </div>
+                         </div></a>
+                     <div>
+                      <a href="#depoamount" data-rel="popup" data-position-to="window" data-transition="slidedown" data-rel="back">
+                       <div class="dash_tile2" style="margin-top:0px;">
+                              <div class="dash_img"><img src="img/home/deposit.png" width="40" height="36"></div>
+                              <div class="dash_con">
+                                  <div class="dash_big">Deposit</div>
+                                  <div class="dash_small">Deposit money into user account</div>
+                              </div>
+                         </div></a>
+                     <div>
+      
+      
+      <div data-role="popup" id="withamount">
+      <div data-role="main" class="ui-content">
+       <p class="tit_font">Withdraw Money</p>
+      <div class="form_div">
+       <div class="form_div1"><img src="img/home/withdraw.png" width="40" height="36"></div>
+       <div class="form_div2"><input type="text" name="email" id="email" placeholder="Enter the amount"></div>
+       </div>
+            <div class="form_div" style="border-bottom:none;">
+            <button type="button" class="login_btn" id="login" style="background-color:#ffd1bf; border-radius:0px;"><a href="#Dashboard">WITHDRAW</a></button>
+            </div>
+        <a href="#" class="ui-shadow ui-btn ui-corner-all ui-btn-inline" data-rel="back">Go Back</a>
+      </div> 
+    </div>
+  </div>
+  
+  
+  <div data-role="popup" id="depoamount">
+      <div data-role="main" class="ui-content">
+       <p class="tit_font">Deposit Money</p>
+      <div class="form_div">
+       <div class="form_div1"><img src="img/home/deposit.png" width="40" height="36"></div>
+       <div class="form_div2"><input type="text" name="email" id="email" placeholder="Enter the amount"></div>
+       </div>
+            <div class="form_div" style="border-bottom:none;">
+            <button type="button" class="login_btn" id="login" style="background-color:#ffd1bf; border-radius:0px;"><a href="#Dashboard">DEPOSIT</a></button>
+            </div>
+        <a href="#" class="ui-shadow ui-btn ui-corner-all ui-btn-inline" data-rel="back">Go Back</a>
+      </div> 
+    </div>
+  </div>
+                    
+                    
+</div>
+</div>   
+</div> 
+<!---------- FAQ's --------------->         
+    <div data-role="page" id="FAQ" class="bck_img">
+                        <div data-role="content">
+            <div class="inner_header">
+                      <div class="inner_con">
+                                    <font class="inner_large">Remote Banking System</font><br/>
+                                    <font class="inner_small">Transations made simple</font>
+                      </div>
+                                <div class="inner_log">
+                                <a href="#Signin"><img src="img/home/logout.png" width="40" height="40"></a>
+                                </div>
+            </div>
+                <div align="center">
+               <p class="faq_content">1. Dashboard Screen</p>
+               <img src="img/home/dash.jpg" width="190" height="360"> 
+               <p class="faq_content">2. Check your balance</p>
+               <img src="img/home/balance.jpg" width="190" height="360"> 
+               <p class="faq_content">3. Transaction details</p>
+               <img src="img/home/tran.jpg" width="190" height="360"> 
+               <p class="faq_content">4. Withdrawal</p>
+               <img src="img/home/with.jpg" width="190" height="360"> 
+               <p class="faq_content">5. Deposit</p>
+               <img src="img/home/depo.jpg" width="190" height="360"> 
+                </div>
+      </div>
+</div>
+</div></div></div></div></div>
+           <!---------- agent info --------------->         
+    <div data-role="page" id="Agent" class="bck_img">
+                        <div data-role="content">
+            <div class="inner_header">
+                      <div class="inner_con">
+                                    <font class="inner_large">Remote Banking System</font><br/>
+                                    <font class="inner_small">Transations made simple</font>
+                      </div>
+                                <div class="inner_log">
+                                <a href="#Signin"><img src="img/home/logout.png" width="40" height="40"></a>
+                                </div>
+            </div>
+            
+            <p class="tit_font">Agent Details</p>
+            
+             <font class="balance_date1">Name : Gobi</font><br/>           
+            <font class="balance_date">Mobile No : 9087172110</font><br/>
+             <font class="balance_date">Agent ID : YF7856N</font><br/>
+            <font class="balance_date">Max Limit : Rs.1,00,000</font>
+            <br/><br/><br/>
+            <font class="balance_date">You have Rs. 80,000 deposits</font><br/>
+            <font class="balance_date">You can now collect Rs. 20,000 only</font>
+            
+    </div>
+</div>        
+</body>
+</html>
